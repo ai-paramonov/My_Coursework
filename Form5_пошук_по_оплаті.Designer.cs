@@ -40,10 +40,10 @@ namespace WindowsFormsApp1
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBox1.Location = new System.Drawing.Point(148, 106);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(142, 36);
+            this.checkBox1.Size = new System.Drawing.Size(163, 43);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Оплата";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(897, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(993, 246);
             this.dataGridView1.TabIndex = 2;
             // 
             // button1
@@ -65,7 +65,7 @@ namespace WindowsFormsApp1
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(399, 79);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(436, 107);
+            this.button1.Size = new System.Drawing.Size(500, 107);
             this.button1.TabIndex = 3;
             this.button1.Text = "Знайти";
             this.button1.UseVisualStyleBackColor = false;
@@ -96,7 +96,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.ClientSize = new System.Drawing.Size(921, 450);
+            this.ClientSize = new System.Drawing.Size(1017, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);

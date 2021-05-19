@@ -43,6 +43,8 @@ namespace WindowsFormsApp1
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -61,7 +63,7 @@ namespace WindowsFormsApp1
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(724, 341);
+            this.button2.Location = new System.Drawing.Point(724, 329);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 61);
             this.button2.TabIndex = 1;
@@ -171,12 +173,37 @@ namespace WindowsFormsApp1
             this.label6.TabIndex = 14;
             this.label6.Text = "Тариф";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(60, 415);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 25);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Оплата";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.checkBox1.Location = new System.Drawing.Point(247, 415);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(564, 29);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "(Натисніть на чекбокс, якщо заборгованості немає)";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.ClientSize = new System.Drawing.Size(877, 414);
+            this.ClientSize = new System.Drawing.Size(877, 479);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -214,5 +241,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -24,8 +24,8 @@ namespace WindowsFormsApp1
         {
             Database_Connection = new OleDbConnection(Connection_Database_Path);
             Database_Connection.Open();
-            bool pay = checkBox1.Checked;
-            string query = "SELECT * FROM Card_File WHERE Оплата = "+ pay +"";
+            bool payment = checkBox1.Checked;
+            string query = "SELECT * FROM Card_File WHERE Оплата = "+ payment +"";
             OleDbDataAdapter command_select = new OleDbDataAdapter(query, Database_Connection);
             DataTable dtable = new DataTable();
             command_select.Fill(dtable);

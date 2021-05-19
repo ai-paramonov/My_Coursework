@@ -25,14 +25,24 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Subscriber_Code = Convert.ToInt32(textBox1.Text);
-            string Surname = textBox2.Text;
-            string Name = textBox3.Text;
-            string Patronymic = textBox4.Text;
-            string query = "INSERT INTO Card_File ([Код абонента], Прізвище, Ім'я, По батькові) VALUES (" + Subscriber_Code + ",'" + Surname + "','" + Name + "','" + Patronymic + "')";
-            OleDbCommand command_add = new OleDbCommand(query, Database_Connection);
-            command_add.ExecuteNonQuery();
-            MessageBox.Show("Абонент доданий");
+            try
+            {
+                int Subscriber_Code = Convert.ToInt32(textBox1.Text);
+                string Surname = textBox2.Text;
+                string Name = textBox3.Text;
+                string Patronymic = textBox4.Text;
+                int Number = Convert.ToInt32(textBox5.Text);
+                string tariff = textBox6.Text;
+                bool payment = checkBox1.Checked;
+                string query = "INSERT INTO Card_File VALUES (" + Subscriber_Code + ",'" + Surname + "','" + Name + "','" + Patronymic + "'," + Number + ", '" + tariff + "', " + payment + " )";
+                OleDbCommand command_add = new OleDbCommand(query, Database_Connection);
+                command_add.ExecuteNonQuery();
+                MessageBox.Show("Абонент доданий");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Неправильно введені дані");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
