@@ -119,5 +119,12 @@ namespace WindowsFormsApp1
             Form_4.Owner = this;
             Form_4.Show();
         }
+
+        private void абонентівПоЗдійсненнюОплатиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Form_5_пошук_по_оплаті = new Form5_пошук_по_оплаті();
+            Form_5_пошук_по_оплаті.Owner = this;
+            Form_5_пошук_по_оплаті.Show();
+        }
     }
 }

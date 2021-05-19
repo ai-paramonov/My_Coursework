@@ -70,6 +70,12 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5_пошук_по_оплаті.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_пошук_по_оплаті.Designer.cs">
+      <DependentUpon>Form5_пошук_по_оплаті.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Картотека_абонентів_АТСDataSet.Designer.cs">
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_пошук_по_оплаті.resx">
+      <DependentUpon>Form5_пошук_по_оплаті.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

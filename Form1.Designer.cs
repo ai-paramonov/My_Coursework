@@ -30,8 +30,8 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.кодАбонентаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.прізвищеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +63,7 @@ namespace WindowsFormsApp1
             this.пошукToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.абонентівПоТарифуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.абонентаПоНомеруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.абонентівПоЗдійсненнюОплатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardFileBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.картотека_абонентів_АТСDataSet)).BeginInit();
@@ -75,14 +76,14 @@ namespace WindowsFormsApp1
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Orange;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодАбонентаDataGridViewTextBoxColumn,
@@ -93,14 +94,14 @@ namespace WindowsFormsApp1
             this.тарифDataGridViewTextBoxColumn,
             this.оплатаDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.cardFileBindingSource;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Location = new System.Drawing.Point(12, 301);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -364,7 +365,8 @@ namespace WindowsFormsApp1
             // 
             this.пошукToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.абонентівПоТарифуToolStripMenuItem,
-            this.абонентаПоНомеруToolStripMenuItem});
+            this.абонентаПоНомеруToolStripMenuItem,
+            this.абонентівПоЗдійсненнюОплатиToolStripMenuItem});
             this.пошукToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.пошукToolStripMenuItem.Name = "пошукToolStripMenuItem";
             this.пошукToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
@@ -373,16 +375,23 @@ namespace WindowsFormsApp1
             // абонентівПоТарифуToolStripMenuItem
             // 
             this.абонентівПоТарифуToolStripMenuItem.Name = "абонентівПоТарифуToolStripMenuItem";
-            this.абонентівПоТарифуToolStripMenuItem.Size = new System.Drawing.Size(279, 30);
+            this.абонентівПоТарифуToolStripMenuItem.Size = new System.Drawing.Size(384, 30);
             this.абонентівПоТарифуToolStripMenuItem.Text = "абонентів по тарифу";
             this.абонентівПоТарифуToolStripMenuItem.Click += new System.EventHandler(this.абонентівПоТарифуToolStripMenuItem_Click);
             // 
             // абонентаПоНомеруToolStripMenuItem
             // 
             this.абонентаПоНомеруToolStripMenuItem.Name = "абонентаПоНомеруToolStripMenuItem";
-            this.абонентаПоНомеруToolStripMenuItem.Size = new System.Drawing.Size(279, 30);
+            this.абонентаПоНомеруToolStripMenuItem.Size = new System.Drawing.Size(384, 30);
             this.абонентаПоНомеруToolStripMenuItem.Text = "абонента по номеру";
             this.абонентаПоНомеруToolStripMenuItem.Click += new System.EventHandler(this.абонентаПоНомеруToolStripMenuItem_Click);
+            // 
+            // абонентівПоЗдійсненнюОплатиToolStripMenuItem
+            // 
+            this.абонентівПоЗдійсненнюОплатиToolStripMenuItem.Name = "абонентівПоЗдійсненнюОплатиToolStripMenuItem";
+            this.абонентівПоЗдійсненнюОплатиToolStripMenuItem.Size = new System.Drawing.Size(384, 30);
+            this.абонентівПоЗдійсненнюОплатиToolStripMenuItem.Text = "абонентів по здійсненню оплати";
+            this.абонентівПоЗдійсненнюОплатиToolStripMenuItem.Click += new System.EventHandler(this.абонентівПоЗдійсненнюОплатиToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -458,6 +467,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem пошукToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem абонентівПоТарифуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem абонентаПоНомеруToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem абонентівПоЗдійсненнюОплатиToolStripMenuItem;
     }
 }
 
